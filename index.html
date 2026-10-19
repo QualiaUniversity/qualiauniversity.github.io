@@ -139,7 +139,8 @@ section{padding:76px 0}
 .course p{color:var(--muted);font-size:.95rem}
 .course .yr{margin-top:auto;font-size:.8rem;font-weight:700;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.08em}
 .assess{display:grid;gap:16px;margin-top:44px}
-@media(min-width:760px){.assess{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:760px){.assess{grid-template-columns:repeat(2,1fr)}.assess .wide{grid-column:1/-1}}
+.assess .tag{display:inline-block;font-family:"Quicksand";font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--purple-ink);background:var(--gold);border-radius:999px;padding:3px 10px;margin-bottom:10px}
 .assess div{padding:22px;border-radius:14px;background:var(--purple-deep);color:#fff}
 .assess b{font-family:"Cinzel";color:var(--gold);font-size:1.15rem;display:block;margin-bottom:6px}
 .assess p{color:#ddd0f5;font-size:.96rem}
@@ -285,7 +286,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--gold)}
     <div>
       <div class="kicker">Statement of Educational Philosophy</div>
       <blockquote>Education is not only about what students know, but how they interpret and understand their knowledge.</blockquote>
-      <p>At Qualia University, we believe that education must acknowledge both measurable physical attributes as well as the subjective experiences of every student. We recognize the importance of each student's consciousness, tailoring to their individual needs. Our philosophy understands that one's grades cannot fully capture their learning experience or identity.</p>
+      <p>At Qualia University, we believe that education must acknowledge both measurable physical attributes as well as the subjective experiences of every student. We recognize the importance of each student's consciousness, tailoring to their individual needs.</p>
       <p>Qualia University knows that education is not only about what students know, but also about how they interpret and understand their knowledge. True education occurs when measurable knowledge and conscious understanding intertwine.</p>
     </div>
     <div class="crest-card">
@@ -349,9 +350,11 @@ footer a{text-decoration:none}footer a:hover{color:var(--gold)}
     <h2 style="font-size:clamp(1.5rem,3vw,2rem)">Assessment Strategies</h2>
   </div>
   <div class="assess">
-    <div><b>Diagnostic</b><p>Measures previous and prior knowledge or skills.</p></div>
-    <div><b>Formative</b><p>Identifies gaps in knowledge and provides ungraded feedback.</p></div>
-    <div><b>Summative</b><p>Evaluates academic performance throughout the course.</p></div>
+    <div><span class="tag">Diagnostic</span><b>Diagnostic Assessments</b><p>Used for measuring previous and prior knowledge or skills.</p></div>
+    <div><span class="tag">Diagnostic</span><b>Conscious Learning Profiles</b><p>Students describe how they learn best and how they personally experience each subject so professors are able to tailor the lessons to all students as best as possible.</p></div>
+    <div><span class="tag">Formative</span><b>Reflective Check-ins</b><p>Ungraded conversations and learning journals where students reflect on what they have learned, what they understood, and how their thinking has changed. Used to identify gaps in knowledge and provide ungraded feedback.</p></div>
+    <div><span class="tag">Summative</span><b>Choice-Based Summative Assessments</b><p>Students show their knowledge in the format that fits them best (report, presentation, artwork, experiment, video), with a short reflection on their own interpretation submitted to the professor and TA. Used to evaluate academic performance throughout the course.</p></div>
+    <div class="wide"><span class="tag">Self &amp; Peer</span><b>Self and Peer Assessment</b><p>Students evaluate their own progress and set personal learning goals with their teachers and peers. For some assessments, students will randomly be assigned peers to work with and will provide feedback to each other.</p></div>
   </div>
 </div></section>
 
